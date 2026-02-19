@@ -1,96 +1,78 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Registration Form</title>
-    <style>
-      body {
-        font-family: Arial, Helvetica, sans-serif;
-      }
 
-      div {
-        margin-bottom: 10px;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  </style>
+</head>
 
-      .container {
-        margin-left: 20px;
-      }
-    </style>
-  </head>
-
-  <body>
-    <div class="container">
-      <h2>Registration Form</h2>
-      <form action="/register.js" method="post">
-        <div>
-          <label for="first_name">First Name:</label>
-          <input type="text" name="first_name" id="first_name" required />
-        </div>
-        <div>
-          <label for="last_name">Last Name:</label>
-          <input type="text" name="last_name" id="last_name" required />
-        </div>
-        <div>
-          <label for="email">Email Address:</label>
-          <input type="email" name="email" id="email" required />
-        </div>
-        <div>
-          <label for="password">Password:</label>
-          <input type="password" name="password" id="password" required />
-        </div>
-        <div>
-          <label for="password_confirmation">Confirm Password:</label>
-          <input
-            type="password"
-            name="password_confirmation"
-            id="password_confirmation"
-            required
-          />
-        </div>
-        <div>
-          <label for="birthday">Birthday:</label>
-          <input type="date" name="birthday" id="birthday" />
-        </div>
-        <div>
-          <label>Gender Identity:</label>
-          <input type="radio" name="gender" id="male" value="male" /><label
-            for="male"
-            >Male</label
-          >
-          <input type="radio" name="gender" id="female" value="female" /><label
-            for="female"
-            >Female</label
-          >
-        </div>
-        <div>
-          <label style="display: block" for="description"
-            >A short description about myself:</label
-          >
-          <textarea
-            name="description"
-            id="description"
-            rows="4"
-            cols="30"
-          ></textarea>
-        </div>
-        <div>
-          <label for="language">Favorite Language:</label>
-          <select name="language" id="language">
-            <option value="">Select favorite language</option>
-            <option value="js">JavaScript</option>
-            <option value="python">Python</option>
-            <option value="php">PHP</option>
-          </select>
-        </div>
-        <div>
-          <input type="checkbox" name="updates" id="updates" /><label
-            for="updates"
-            >Yes, I would like to receive periodic email updates</label
-          >
-        </div>
-        <button>Create Account</button>
-      </form>
+<body>
+  <h2>Registration Form</h2>
+  <form action="/register.js" method="post">
+    <div>
+      <label for="first_name">First Name:</label>
+      <input type="text" name="first_name" id="first_name" required />
     </div>
-  </body>
+    <br />
+    <div>
+      <label for="last_name">Last Name:</label>
+      <input type="text" name="last_name" id="last_name" required />
+    </div>
+    <br />
+    <div>
+      <label for="email">Email Address:</label>
+      <input type="email" name="email" id="email" required />
+    </div>
+    <br />
+    <div>
+      <label for="password">Password:</label>
+      <input type="password" name="password" id="password" required />
+    </div>
+    <br />
+    <div>
+      <label for="password_confirmation">Confirm Password:</label>
+      <input type="password" name="password_confirmation" id="password_confirmation" required />
+    </div>
+    <br />
+    <div>
+      <label for="birthday">Birthday:</label>
+      <input type="date" name="birthday" id="birthday" />
+    </div>
+    <br />
+    <div>
+      <label>Gender Identity:</label>
+      <input type="radio" name="gender" id="male" value="male" /><label for="male">Male</label>
+      <input type="radio" name="gender" id="female" value="female" /><label for="female">Female</label>
+    </div>
+    <br />
+    <div>
+      <label style="display: block" for="description">A short description about myself:</label>
+      <textarea name="description" id="description" rows="4" cols="30"></textarea>
+    </div>
+    <br />
+    <div>
+      <label for="language">Favorite Language:</label>
+      <select name="language" id="language">
+        <option value="">Select favorite language</option>
+        <option value="js">JavaScript</option>
+        <option value="python">Python</option>
+        <option value="php">PHP</option>
+      </select>
+    </div>
+    <br />
+    <div>
+      <input type="checkbox" name="updates" id="updates" /><label for="updates">Yes, I would like to receive periodic
+        email updates</label>
+    </div>
+    <br />
+    <input type="button" value="Create Account" />
+  </form>
+</body>
+
 </html>
