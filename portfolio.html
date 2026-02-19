@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio - Khaled Alabadla">
+  <title>Portfolio - Khaled Alabadla</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .container {
+      margin-left: 20px;
+      margin-right: 20px;
+      text-align: center;
+    }
+
+    .portfolio-image {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .social {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .social div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+    }
+
+    table {
+      margin: auto;
+    }
+
+    table,
+    table td,
+    table th {
+      border: 1px solid;
+      border-collapse: collapse;
+    }
+
+    table th,
+    table td {
+      padding: 8px 15px
+    }
+
+    .contact {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .message {
+      margin: 10px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Khaled Alabadla</h1>
+    <img class="portfolio-image" src="https://khaled-esam.vercel.app/bg.jpg" alt="Portfolio Image" width="250">
+    <div class="social">
+      <div>
+
+        <a href="https://github.com/Khaled-Alabadla"> <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+            alt="Github" width="30px"></a>
+      </div>
+      <div>
+
+        <a class="linkedin" href="https://www.linkedin.com/in/khaled-alabadla"> <img
+            src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png" alt="" width="30"></a>
+      </div>
+      <div>
+
+        <a href="mailto:kh.es.abadla@gmail.com"><img
+            src="https://static.vecteezy.com/system/resources/previews/022/647/958/non_2x/email-icon-for-your-website-mobile-presentation-and-logo-design-free-vector.jpg"
+            alt="" width="40"></a>
+      </div>
+    </div>
+    <div class="technologies">
+      <h2>Technologies</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Front-End</th>
+            <th>Back-End</th>
+            <th>Database</th>
+            <th>Concepts</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML5</td>
+            <td>PHP</td>
+            <td>MySQL</td>
+            <td>Ajax</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>Laravel</td>
+            <td>SQL Server</td>
+            <td>Git/Github</td>
+          </tr>
+          <tr>
+            <td>JS</td>
+            <td>MVC</td>
+            <td>Supabase</td>
+            <td>Restful API</td>
+          </tr>
+        </tbody>
+
+      </table>
+    </div>
+    <div class="projects">
+      <h2>Projects</h3>
+        <div>
+          <p>Aqar Gaza: <a href="http://aqar-gaza.ct.ws" target="_blank">Go to website</a></p>
+          <p>َQarara Aid: <a href="https://qarara-aid.vercel.app" target="_blank">Go to website</a></p>
+          <p>َSim Academy: <a href="https://sim-academy.vercel.app" target="_blank">Go to website</a></p>
+          <p>َSwiftQR: <a href="https://swiftqr.vercel.app" target="_blank">Go to website</a></p>
+        </div>
+    </div>
+    <div class="contact-me">
+      <h2>Contact Me</h2>
+      <form action="/contact.js" method="post">
+        <div class="contact">
+          <div class="name">
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name">
+          </div>
+          <div class="email">
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email">
+          </div>
+        </div>
+        <div class="message">
+          <label for="message">Message: </label>
+          <textarea name="" id="" rows="5" cols="40"></textarea>
+        </div>
+        <button>Send Message</button>
+      </form>
+
+    </div>
+  </div>
+
+</body>
+
+</html>
