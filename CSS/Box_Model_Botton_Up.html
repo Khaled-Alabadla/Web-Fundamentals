@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Model - Botton Up</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .container {
+      margin-top: 30px;
+      margin-left: 20px;
+    }
+
+    .container button {
+      display: block;
+      margin-top: 10px;
+      cursor: pointer
+    }
+
+    .container .search {
+      color: #31988f;
+      border: 2px solid #31988f;
+      border-radius: 20px;
+      padding: 5px 40px;
+      font-weight: bold;
+    }
+
+    .container .plus {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      color: #fff;
+      background-color: #55d0aa;
+      border: none;
+    }
+
+    .container .create-account {
+      background-color: rgb(18, 129, 221);
+      color: #fff;
+      padding: 3px 20px;
+      box-shadow: 2px 3px 0 black;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <button class="search">Search</button>
+    <button class="plus">+</button>
+    <button class="create-account">Create Account</button>
+  </div>
+</body>
+
+</html>
