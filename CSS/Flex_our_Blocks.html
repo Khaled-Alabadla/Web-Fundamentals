@@ -5,12 +5,6 @@
   <title>Position Practice</title>
   <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
     .container {
       width: 950px;
       background-color: silver;
@@ -28,33 +22,31 @@
       height: 300px;
       width: 200px;
       background-color: blue;
-      display: inline-block;
-      margin-right: 6px;
-      vertical-align: top;
     }
 
     .main {
       height: 400px;
       width: 700px;
       background-color: red;
-      display: inline-block;
-      padding: 15px;
+      padding: 20px;
     }
 
     .sub-content {
       height: 200px;
       width: 210px;
       background-color: yellow;
-      display: inline-block;
-      margin-right: 10px;
     }
 
     #advertisement {
       height: 120px;
       width: 660px;
       background-color: purple;
-      display: inline-block;
       margin-top: 20px;
+    }
+
+    .row {
+      display: flex;
+      gap: 20px;
     }
   </style>
 </head>
@@ -62,12 +54,16 @@
 <body>
   <div class="container">
     <div class="top-nav"></div>
-    <div class="side-nav"></div>
-    <div class="main">
-      <div class="sub-content"></div>
-      <div class="sub-content"></div>
-      <div class="sub-content"></div>
-      <div id="advertisement"></div>
+    <div class="row">
+      <div class="side-nav"></div>
+      <div class="main">
+        <div class="row">
+          <div class="sub-content"></div>
+          <div class="sub-content"></div>
+          <div class="sub-content"></div>
+        </div>
+        <div id="advertisement"></div>
+      </div>
     </div>
   </div>
 </body>
