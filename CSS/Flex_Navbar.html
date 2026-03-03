@@ -5,11 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Flex Navbar</title>
+
   <style>
     * {
       box-sizing: border-box;
       padding: 0;
-      margin: 0
+      margin: 0;
     }
 
     body {
@@ -23,52 +24,85 @@
       padding: 10px 20px;
       background: #2b2a2a;
       margin: 30px;
-
     }
 
-    .nav .nav-title {
+    .nav-title {
       color: #fff;
     }
 
-    .nav .nav-links {
+    .nav-links {
       display: flex;
-      justify-content: center;
       align-items: center;
       gap: 30px;
       list-style: none;
     }
 
-    .nav .nav-links a {
+    .nav-links a {
       text-decoration: none;
-      color: rgb(183 175 175);
+      color: rgb(183, 175, 175);
     }
 
-    .nav .nav-links a.active {
+    .nav-links a.active {
       color: #fff;
     }
 
-    .nav .nav-links button {
+    .nav-links button {
       padding: 7px 15px;
       box-shadow: 3px 3px 0 black;
       background-color: #4396ab;
       color: #fff;
-      font-family: unset;
       border: 3px solid #000;
       cursor: pointer;
+    }
+
+    /* ========================= */
+    /* MOBILE VERSION */
+    /* ========================= */
+
+    @media (max-width: 768px) {
+
+      .nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+        margin-top: 10px;
+      }
+
+      .nav-links li {
+        width: 100%;
+      }
+
+      .nav-links a,
+      .nav-links button {
+        display: block;
+        width: 100%;
+        padding: 12px;
+        text-align: left;
+        border-top: 1px solid #444;
+      }
+
     }
   </style>
 </head>
 
 <body>
+
   <div class="nav">
     <h1 class="nav-title">Profile</h1>
+
     <ul class="nav-links">
       <li><a href="#">Home</a></li>
       <li><a href="#" class="active">My Profile</a></li>
       <li><a href="#">Find Connections</a></li>
-      <li><button class="btn">Sign Out</button></li>
+      <li><button>Sign Out</button></li>
     </ul>
   </div>
+
 </body>
 
 </html>

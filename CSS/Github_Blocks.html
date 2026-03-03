@@ -20,8 +20,7 @@
       width: 800px;
       margin: 50px auto;
       padding: 30px;
-      background-color: hsl(0, 0%, 90%);
-
+      background-color: #e6e6e6;
     }
 
     h1 {
@@ -32,26 +31,18 @@
 
     img {
       width: 200px;
-      height: 200px;
-      object-fit: cover;
-      margin-right: 30px;
     }
 
-    .first-section,
-    .second-section,
-    .third-section {
+    .section {
       display: flex;
       padding: 30px;
       margin-bottom: 20px;
     }
 
+
     .first-section {
       background-color: #4db9e2;
-      justify-content: center;
-    }
-
-    .first-section :last-child {
-      margin: 0;
+      justify-content: space-between;
     }
 
     .second-section {
@@ -59,17 +50,9 @@
       justify-content: space-evenly;
     }
 
-    .second-section :last-child {
-      margin: 0;
-    }
-
     .third-section {
       background-color: #fff;
       justify-content: space-between;
-    }
-
-    .third-section :last-child {
-      margin: 0;
     }
   </style>
 </head>
@@ -78,16 +61,16 @@
   <div class="container">
     <h1>Github Blocks</h1>
     <div class="blocks">
-      <div class="first-section">
+      <div class="section first-section">
         <img src="https://octodex.github.com/images/securityknightocat.png" alt="Security Knigh Tocat">
         <img src="https://octodex.github.com/images/universetocat.png" alt="Universe Tocat">
         <img src="https://octodex.github.com/images/Parentocats_FULL.png" alt="">
       </div>
-      <div class="second-section">
+      <div class="section second-section">
         <img src="https://octodex.github.com/images/yogitocat.png" alt="Yogitocat">
         <img src="https://octodex.github.com/images/Sentrytocat_octodex.jpg" alt="Sentrytocat Octodex">
       </div>
-      <div class="third-section">
+      <div class="section third-section">
         <img src="https://octodex.github.com/images/puddle_jumper_octodex.jpg" alt="Puddle Jumper Octodex">
         <img src="https://octodex.github.com/images/filmtocat.png" alt="Filmtocat">
         <img src="https://octodex.github.com/images/minertocat.png" alt="Minertocat">
