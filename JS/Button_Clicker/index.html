@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dojonary</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="nav-container">
+      <h1 class="logo">Dojonary</h1>
+      <input type="text" placeholder="Search" class="search-bar">
+      <button class="btn btn-blue" onclick="toggleLogin(this)">Login</button>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="left-col">
+      <div class="card definition-card">
+        <div class="card-left">
+          <h2>ninja</h2>
+          <p class="part-of-speech">noun</p>
+          <p class="plural">Plural: <em>ninjas</em></p>
+          <button class="btn btn-yellow" onclick="likeNinja()">13 likes</button>
+        </div>
+        <div class="card-right">
+          <p>A practitioner skilled in the <a href="#">Japanese</a> art of <a href="#">ninjutsu</a></p>
+        </div>
+      </div>
+
+      <div class="card definition-card">
+        <div class="card-left">
+          <h2>ninja</h2>
+          <p class="part-of-speech">noun</p>
+          <p class="plural">Plural: <em>ninjas</em></p>
+          <button class="btn btn-yellow" onclick="likeNinja()">37 likes</button>
+        </div>
+        <div class="card-right">
+          <p>A <a href="#">programmer</a> who breaks down problems with <a href="#">zen</a>-like focus</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="right-col">
+      <div class="card sidebar-card">
+        <h3>Dojonary is defined by <strong>YOU</strong></h3>
+        <button class="btn btn-green" onclick="hideElement(this)">Add Definition</button>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
