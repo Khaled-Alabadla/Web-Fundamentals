@@ -1,20 +1,26 @@
 let requestSpan = document.querySelector("#requestCount");
 let connectionSpan = document.querySelector("#connectionCount");
 let username = document.querySelector("#userName");
+let list = document.querySelector('.connections-list');
 
 function accept(element) {
-    let elementToRemove = element.parentElement.parentElement;
-    elementToRemove.remove();
+    parent = element.parentElement.parentElement;
+    let name = parent.querySelector('.user-info')
+    parent.remove();
     requestSpan.innerText--;
     connectionSpan.innerText++;
+    list.innerHTML += name.innerHTML
 }
 
 function ignore(element) {
-    let elementToRemove = element.parentElement.parentElement;
-    elementToRemove.remove();
+    element.parentElement.parentElement.remove();
     requestSpan.innerText--;
 }
 
 function edit() {
-    username.innerText = "Khaled Alabadla";
+    if (username.innerText == "Khaled Esam") {
+        username.innerText = "Khaled Alabadla";
+    } else {
+        username.innerText = "Khaled Esam"
+    }
 }

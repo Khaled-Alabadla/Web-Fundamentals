@@ -2,118 +2,118 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Profile Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Profile Page</title>
 </head>
 
 <body>
-  <nav>
+    <nav>
+        <div class="container">
+            <h1 class="nav-title">Profile</h1>
+            <div class="nav-links">
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#" class="active">My Profile</a></li>
+                    <li><a href="#">Find Connections</a></li>
+                </ul>
+                <button>Sign Out</button>
+            </div>
+        </div>
+    </nav>
+
     <div class="container">
-      <h1 class="nav-title">Profile</h1>
-      <div class="nav-links">
-        <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#" class="active">My Profile</a></li>
-          <li><a href="#">Find Connections</a></li>
-        </ul>
-        <button>Sign Out</button>
-      </div>
-    </div>
-  </nav>
-
-  <div class="container">
-    <div class="profile-main">
-      <div class="user-card">
-        <div class="card-header"></div>
-        <div class="card-body">
-          <img src="icons/user-circle.png" class="user-avatar" alt="User icon">
-          <h1 id="userName">Khaled Esam</h1>
-          <div class="location">
-            <img src="icons/map-marker.png" alt="Map maker" class="location-icon">
-            <p>Gaza</p>
-          </div>
-          <div class="position">
-            Software Engineer | Full-Stack Developer | PHP & Laravel Developer
-          </div>
-          <div class="edit-profile">
-            <img src="icons/gear.png" alt="Edit profile">
-            <a href="#" onclick="edit()">edit profile</a>
-          </div>
-        </div>
-      </div>
-      <div class="education-card">
-        <h2>Education</h2>
-        <div class="education">
-          <div>
-            <h3>Axsos Academy - Full Stack Bootcamp</h3>
-            <p>Feb 2026 - Present</p>
-          </div>
-          <div>
-            <h3>University of Palestine - Bachelor in Software Engineering</h3>
-            <p>Sep 2020 - Nov 2025</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="profile-sidebar">
-      <div class="requests-card">
-        <h2><span id="requestCount">2</span> Requests</h2>
-        <div class="requests">
-          <div class="connection">
-            <div class="user-info">
-              <img src="icons/user-circle.png" alt="">
-              <p class="name">Mohammed Ahmed</p>
+        <div class="profile-main">
+            <div class="user-card">
+                <div class="card-header"></div>
+                <div class="card-body">
+                    <img src="icons/user-circle.png" class="user-avatar" alt="User icon">
+                    <h1 id="userName">Khaled Esam</h1>
+                    <div class="location">
+                        <img src="icons/map-marker.png" alt="Map maker" class="location-icon">
+                        <p>Gaza</p>
+                    </div>
+                    <div class="position">
+                        Software Engineer | Full-Stack Developer | PHP & Laravel Developer
+                    </div>
+                    <div class="edit-profile">
+                        <img src="icons/gear.png" alt="Edit profile">
+                        <a href="#" onclick="edit()">edit profile</a>
+                    </div>
+                </div>
             </div>
-            <div class="action-icons">
-              <img src="icons/accept-circle.png" alt="accept" onclick="accept(this)">
-              <img src="icons/close-circle.png" alt="close" onclick="ignore(this)">
+            <div class="education-card">
+                <h2>Education</h2>
+                <div class="education">
+                    <div>
+                        <h3>Axsos Academy - Full Stack Bootcamp</h3>
+                        <p>Feb 2026 - Present</p>
+                    </div>
+                    <div>
+                        <h3>University of Palestine - Bachelor in Software Engineering</h3>
+                        <p>Sep 2020 - Nov 2025</p>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="connection">
-            <div class="user-info">
-              <img src="icons/user-circle.png" alt="">
-              <p class="name">Mostafa Hammad</p>
-            </div>
-            <div class="action-icons">
-              <img src="icons/accept-circle.png" alt="accept" onclick="accept(this)">
-              <img src="icons/close-circle.png" alt="close" onclick="ignore(this)">
-            </div>
-          </div>
         </div>
 
-      </div>
-      <div class="connections-card">
-        <h2><span id="connectionCount">500</span>+ Your Connections</h2>
-        <div class="connections-list">
-          <div class="user-info">
-            <img src="icons/user-circle.png" alt="">
-            <p class="name">Shatha Bast</p>
-          </div>
-          <div class="user-info">
-            <img src="icons/user-circle.png" alt="">
-            <p class="name">Manar Ismail</p>
-          </div>
-          <div class="user-info">
-            <img src="icons/user-circle.png" alt="">
-            <p class="name">Bilal Qanoa</p>
-          </div>
-          <div class="user-info">
-            <img src="icons/user-circle.png" alt="">
-            <p class="name">Ahmed Abohabel</p>
-          </div>
-          <div class="user-info">
-            <img src="icons/user-circle.png" alt="">
-            <p class="name">Mahmoud Miqdad</p>
-          </div>
+        <div class="profile-sidebar">
+            <div class="requests-card">
+                <h2><span id="requestCount">2</span> Requests</h2>
+                <div class="requests">
+                    <div class="connection">
+                        <div class="user-info">
+                            <img src="icons/user-circle.png" alt="">
+                            <p class="name">Mohammed Ahmed</p>
+                        </div>
+                        <div class="action-icons">
+                            <img src="icons/accept-circle.png" alt="accept" onclick="accept(this)">
+                            <img src="icons/close-circle.png" alt="close" onclick="ignore(this)">
+                        </div>
+                    </div>
+                    <div class="connection">
+                        <div class="user-info">
+                            <img src="icons/user-circle.png" alt="">
+                            <p class="name">Mostafa Hammad</p>
+                        </div>
+                        <div class="action-icons">
+                            <img src="icons/accept-circle.png" alt="accept" onclick="accept(this)">
+                            <img src="icons/close-circle.png" alt="close" onclick="ignore(this)">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="connections-card">
+                <h2><span id="connectionCount">500</span>+ Your Connections</h2>
+                <div class="connections-list">
+                    <div class="user-info">
+                        <img src="icons/user-circle.png" alt="">
+                        <p class="name">Shatha Bast</p>
+                    </div>
+                    <div class="user-info">
+                        <img src="icons/user-circle.png" alt="">
+                        <p class="name">Manar Ismail</p>
+                    </div>
+                    <div class="user-info">
+                        <img src="icons/user-circle.png" alt="">
+                        <p class="name">Bilal Qanoa</p>
+                    </div>
+                    <div class="user-info">
+                        <img src="icons/user-circle.png" alt="">
+                        <p class="name">Ahmed Abohabel</p>
+                    </div>
+                    <div class="user-info">
+                        <img src="icons/user-circle.png" alt="">
+                        <p class="name">Mahmoud Miqdad</p>
+                    </div>
+                </div>
+                <a href="">View More</a>
+            </div>
         </div>
-        <a href="">View More</a>
-      </div>
     </div>
-  </div>
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
